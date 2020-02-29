@@ -1,7 +1,7 @@
 --- generate a chord from a single input 
 -- in1: gate in
 -- in2: chord root quantized to v/oct 
--- out1-4: chord voices
+-- out1-4: chord degrees
 
 --needs work to make it interesting/musical
 
@@ -26,6 +26,8 @@ c16 = {-12,0,0,12,24} --2 up 1 down octave
 
 --set the chord to play. also change this from druid
 chord = c1
+--chords list
+chords = {c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12}
 
 --clock in
 function init()
@@ -33,18 +35,17 @@ function init()
 end
 
 input[1].change = function()
-	--get the voltage from input 2 - 'the root'
+	--get the voltage from input 2
 	v = input[2].volts
-	
-	--get the chord voices, /12 to get semitones in v/oct
-	i = chord[1]/12
-	ii = chord[2]/12
-	iii = chord[3]/12
-	iv = chord[4]/12
-	
-	--output the chord
-	output[1].volts = (v + i)
-	output[2].volts = (v + ii)
-	output[3].volts = (v + iii)
-	output[4].volts = (v + iv)
+	--/12 to get semitones in v/oct
+	local note1 = chord[1]/12
+	local note2 = chord[2]/12
+	local note3 = chord[3]/12
+	local note4 = chord[4]/12
+
+	output[1].volts = (v + note1)
+	output[2].volts = (v + note2)
+	output[3].volts = (v + note3)
+	output[4].volts = (v + note4)
+
 end
