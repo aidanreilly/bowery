@@ -3,8 +3,6 @@
 -- in2: chord root quantized to v/oct 
 -- out1-4: chord degrees
 
---needs work to make it interesting/musical
-
 --chords from music-thing-modular chord-organ
 
 c1 = {0,4,7,12,0} --Major
@@ -38,14 +36,7 @@ input[1].change = function()
 	--get the voltage from input 2
 	v = input[2].volts
 	--/12 to get semitones in v/oct
-	local note1 = chord[1]/12
-	local note2 = chord[2]/12
-	local note3 = chord[3]/12
-	local note4 = chord[4]/12
-
-	output[1].volts = (v + note1)
-	output[2].volts = (v + note2)
-	output[3].volts = (v + note3)
-	output[4].volts = (v + note4)
-
+	for n=1,4 do
+		output[n].volts = (v + chord[n]/12)
+	end
 end
