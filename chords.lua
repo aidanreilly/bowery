@@ -1,9 +1,9 @@
 --- generate a chord from a single input 
--- in1: chord choice, 1v/oct chooses chord shape 1-12
--- in2: chord root quantized to v/oct
+-- in1: chord root, send 1v/oct
+-- in2: chord choice, send -5 to +5V
 -- out1-4: chord degrees
 
--- choose your chord shape
+-- chord shapes!
 chords = { {0,0,0,0,0} --Root -5V
 , {0,4,7,12,0} --Major
 , {4,7,12,16,-5} --Major inv 1
