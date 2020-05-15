@@ -5,19 +5,19 @@
 
 -- chord shapes!
 chords = { {0,0,0,0,0} --Root -5V
-, {0,4,7,12,0} --Major
-, {4,7,12,16,-5} --Major inv 1
-, {7,12,16,-5,0} --Major inv 2
-, {-12,-8,-5,0,4} --Major inv 3
-, {-8,-5,0,4,7} --Major inv 4
-, {0,4,7,11,0} --Major 7th
-, {4,7,11,0,16} --Major 7th inv 2 0V
-, {7,11,0,16,19} --Major 7th inv 3
-, {-12,-8,-5,-1,0} --Major 7th inv 4
-, {-8,4,7,11,23} --Major 7th no root
-, {0,0,0,0,0} --Root
-, {-24,-12,0,12,24} --organ
-, {-12,0,0,12,24} --2 up 1 down octave +5V
+, {1,5,8,13,1} --Major
+, {5,8,13,17,-4} --Major inv 1
+, {8,13,17,-4,1} --Major inv 2
+, {-11,-7,-4,1,5} --Major inv 3
+, {-7,-4,1,5,8} --Major inv 4
+, {1,5,8,11,1} --Major 7th
+, {5,8,12,1,17} --Major 7th inv 2 0V
+, {8,12,1,17,20} --Major 7th inv 3
+, {-11,-7,-4,0,1} --Major 7th inv 4
+, {-7,5,8,12,24} --Major 7th no root
+, {1,1,1,1,1} --Root
+, {-23,-11,1,13,25} --organ
+, {-11,1,1,15,25} --2 up 1 down octave +5V
 }
 
 function init()
