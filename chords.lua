@@ -4,22 +4,41 @@
 -- out1-4: chord degrees
 
 -- Try chords from here: https://github.com/monome/norns/blob/dev/lua/lib/musicutil.lua
+--quirk: because list index starts at 0, in the for n=1,4 loop, you need to account for this with an extra item at the end of the list.
 
-chords = { {0,0,0,0,0} --Root
-, {0,4,7,9,0} -- Maj6
-, {0,4,7,11,0} -- Maj7
-, {0,4,7,10,0} -- Dom7
-, {0,4,8,10,0} -- Aug7
-, {0,5,7,10,0} -- Sus4
-, {0,3,7,11,0} -- MinMaj7
-, {0,3,7,9,0} -- Min6
-, {0,3,7,10,0} -- Min7
-, {0,3,6,9,0} -- Dim7
-, {0,3,6,10,0} -- HalfDim7
-, {0,3,7,9,0} -- Min6
-, {0,3,7,10,0} -- Min7
-, {12,-12,12,-12,12} --OctUpDown
+--chord organ default
+chords = { {0,4,7,12,0}
+, {0,3,7,12,0}
+, {0,4,7,11,0}
+, {0,3,7,10,0}
+, {0,4,7,11,14}
+, {0,3,7,10,14}
+, {0,5,7,12,0}
+, {0,7,12,0,7}
+, {0,5,12,0,5}
+, {0,4,7,8,0}
+, {0,3,7,8,0}
+, {0,3,6,0,3}
+, {0,4,8,0,4}
+, {0,0,0,0,0}
 }
+
+--alternative chord set
+--chords = { {0,0,0,0,0} --Root
+--, {0,4,7,9,0} -- Maj6
+--, {0,4,7,11,0} -- Maj7
+--, {0,4,7,10,0} -- Dom7
+--, {0,4,8,10,0} -- Aug7
+--, {0,5,7,10,0} -- Sus4
+--, {0,3,7,11,0} -- MinMaj7
+--, {0,3,7,9,0} -- Min6
+--, {0,3,7,10,0} -- Min7
+--, {0,3,6,9,0} -- Dim7
+--, {0,3,6,10,0} -- HalfDim7
+--, {0,3,7,9,0} -- Min6
+--, {0,3,7,10,0} -- Min7
+--, {12,-12,12,-12,12} --OctUpDown
+--}
 
 function init()
 	--use a metro to clock the sampling of in1 and in2
