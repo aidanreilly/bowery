@@ -9,7 +9,7 @@
 
 notes = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 
--- make a new sequins from notes by passing it as the argument to the 'sequins' function
+-- make a new sequins from notes
 notes_sequins = sequins(notes)
 
 -- set up the sequins
