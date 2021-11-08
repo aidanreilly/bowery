@@ -9,27 +9,44 @@
 
 notes = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 
+--transpose amount
+t1 = 0
+t2 = 0
+
+--clock div amount
+d1 = 3
+d2 = 1
+
+--sequins step amount
+s1 = 1
+s2 = 3
+
 -- make a new sequins from notes
 notes_sequins = sequins(notes)
 
 -- set up the sequins
-seq_1 = notes_sequins:step(3)
-seq_2 = notes_sequins:step(5)
+seq_1 = notes_sequins:step(s1)
+seq_2 = notes_sequins:step(s2)
 
 function sequence()
   -- get notes from external seq into 16 stage shift register
   table.remove(notes)
   table.insert(notes, 1, input[1].volts)
-  --make notes
-  output[1].volts = seq_1()
-  output[3].volts = seq_2()
+  --make v1 notes
+  v1 = seq_1() 
+  v1 = v1 + t1
+  output[1].volts = v1
+  --make v2 notes
+  v2 = seq_2() 
+  v2 = v2 + t2
+  output[3].volts = v2  
 end
 
 int_clk = clock.run(function()
   while true do
     clock.sync(1)
-    output[2]:clock(3) -- divide the clock
-    output[4]:clock(5)
+    output[2]:clock(d1) -- divide the clock
+    output[4]:clock(d2)
     sequence()
   end
 end)
@@ -37,5 +54,5 @@ end)
 function init()
     input[2].mode('clock', 1)
     input[2].change = sequence
-    print('seq m8 loaded m8')
+    print('loaded seq m8')
 end
