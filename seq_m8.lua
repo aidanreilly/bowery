@@ -8,22 +8,26 @@
 -- out4: voice 2 trig
 
 notes = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
-
 --transpose amount
 t1 = 0
 t2 = 0
-
 --clock div amount
 d1 = 3
 d2 = 1
-
 --sequins step amount
 s1 = 1
 s2 = 3
 
+-- public params
+public{'transpose 1' = 0}:xrange(-2, 2):action(function(v) t1 = v end)
+public{'transpose 2' = 0}:xrange(-2, 2):action(function(v) t2 = v end)
+public{'clock div 1' = 3}:xrange(1, 8):action(function(v) d2 = v end)
+public{'clock div 2' = 1}:xrange(1, 8):action(function(v) d2 = v end)
+public{'sequins step 1' = 3}:xrange(1, 16):action(function(v) s1 = v end)
+public{'sequins step 2' = 5}:xrange(1, 16):action(function(v) s1 = v end)
+
 -- make a new sequins from notes
 notes_sequins = sequins(notes)
-
 -- set up the sequins
 seq_1 = notes_sequins:step(s1)
 seq_2 = notes_sequins:step(s2)
