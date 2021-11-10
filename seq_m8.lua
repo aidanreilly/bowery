@@ -21,10 +21,10 @@ s2 = 3
 -- public params
 public.add('trans 1', 0, {-2, 2}, function(v) t1 = v end)
 public.add('trans 2', 0, {-2, 2}, function(v) t2 = v end)
-public.add('clk/dv 1', 1, {1, 8}, function(v) d1 = v end)
-public.add('clk/dv 2', 3, {1, 8}, function(v) d1 = v end)
-public.add('sq stp 1', 3, {1, 8}, function(v) s1 = v end)
-public.add('sq stp 2', 5, {1, 8}, function(v) s1 = v end)
+public.add('clk/dv 1', 1, {1, 16}, function(v) d1 = v end)
+public.add('clk/dv 2', 3, {1, 16}, function(v) d2 = v end)
+public.add('sq stp 1', 3, {1, 15}, function(v) s1 = v end)
+public.add('sq stp 2', 5, {1, 15}, function(v) s2 = v end)
 
 -- make a new sequins from notes
 notes_sequins = sequins(notes)
