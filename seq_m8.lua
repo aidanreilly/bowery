@@ -19,12 +19,12 @@ s1 = 1
 s2 = 3
 
 -- public params
-public{'transpose 1' = 0}:xrange(-2, 2):action(function(v) t1 = v end)
-public{'transpose 2' = 0}:xrange(-2, 2):action(function(v) t2 = v end)
-public{'clock div 1' = 3}:xrange(1, 8):action(function(v) d2 = v end)
-public{'clock div 2' = 1}:xrange(1, 8):action(function(v) d2 = v end)
-public{'sequins step 1' = 3}:xrange(1, 16):action(function(v) s1 = v end)
-public{'sequins step 2' = 5}:xrange(1, 16):action(function(v) s1 = v end)
+public.add('trans 1', 0, {-2, 2}, function(v) t1 = v end)
+public.add('trans 2', 0, {-2, 2}, function(v) t2 = v end)
+public.add('clk/dv 1', 1, {1, 8}, function(v) d1 = v end)
+public.add('clk/dv 2', 3, {1, 8}, function(v) d1 = v end)
+public.add('sq stp 1', 3, {1, 8}, function(v) s1 = v end)
+public.add('sq stp 2', 5, {1, 8}, function(v) s1 = v end)
 
 -- make a new sequins from notes
 notes_sequins = sequins(notes)
