@@ -8,13 +8,13 @@
 -- out4: voice 2 trig
 
 notes = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
---transpose amount
+-- transpose amount
 t1 = 0
 t2 = 0
---clock div amount
+-- clock div amount
 d1 = 3
 d2 = 1
---sequins step amount
+-- sequins step amount
 s1 = 1
 s2 = 3
 
@@ -32,31 +32,34 @@ notes_sequins = sequins(notes)
 seq_1 = notes_sequins:step(s1)
 seq_2 = notes_sequins:step(s2)
 
-function sequence()
-  -- get notes from external seq into 16 stage shift register
+function get_notes()
+  -- get notes from external sequencer into 16 stage shift register
   table.remove(notes)
-  table.insert(notes, 1, input[1].volts)
-  --make v1 notes
-  v1 = seq_1() 
-  v1 = v1 + t1
-  output[1].volts = v1
-  --make v2 notes
-  v2 = seq_2() 
-  v2 = v2 + t2
-  output[3].volts = v2  
+  table.insert(notes, 1, input[1].volts) 
 end
 
-int_clk = clock.run(function()
-  while true do
-    clock.sync(1)
-    output[2]:clock(d1) -- divide the clock
-    output[4]:clock(d2)
-    sequence()
-  end
-end)
+function sequence_1()
+  --make v1 notes 
+  v1 = seq_1() + t1
+  output[1].volts = v1
+  output[2]:clock(d1) -- divided trig out
+end
+
+function sequence_2()
+  v2 = seq_2() + t2
+  output[3].volts = v2
+  output[4]:clock(d2)
+end
 
 function init()
     input[2].mode('clock', 1)
-    input[2].change = sequence
+    input[2].change = clock.run(function()
+      while true do
+        clock.sync(1)
+        get_notes()
+        sequence_1()
+        sequence_2()
+        end
+    end)
     print('loaded seq m8')
 end
