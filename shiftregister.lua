@@ -7,23 +7,28 @@
 
 -- public params
 public.add('portamento', 0, {0, 0.5}, function(v) for n=1,4 do output[n].slew = v end end)
-public.add('ii_dest', 'none', {'none','jf','wsyn'}
+--public.add('ii_dest', 'none', {'none','jf','wsyn'}
     , function(e) if e=='jf' then ii.jf.mode(1) end end) -- enable synthesis mode
-public.add('ii_velo', 2, {0.1, 5})
+--public.add('ii_velo', 2, {0.1, 5})
 
 -- global state
 reg = {0,0,0,0,0,0}
 
 function make_notes(r)
-  for n=1,4 do
+  for n=1,2 do
     output[n].volts = r[n]
   end
-  if public.ii_dest ~= 'none' then
-    local count = (public.ii_dest == 'jf') and 6 or 4
-    for n=1,count do
-      ii[public.ii_dest]play_note(r[n], public.ii_velo)
-    end
-  end
+  --down a fifth 
+  output[3].volts = math.floor((r[3]*12)/12)-5/12
+  --down an octave
+  output[4].volts = math.floor((r[4]*12)/12)-1
+
+  --if public.ii_dest ~= 'none' then
+    --local count = (public.ii_dest == 'jf') and 6 or 4
+    --for n=1,count do
+      --ii[public.ii_dest]play_note(r[n], public.ii_velo)
+    --end
+  --end
 end
 
 input[2].change = function()
