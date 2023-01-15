@@ -6,9 +6,9 @@
 -- ii: 6 stages of ASR via just friends
 
 -- public params
-public.add('portamento', 0, {0, 0.5}, function(v) for n=1,4 do output[n].slew = v end end)
+public.add('portamento', 0, {0, 0.01}, function(v) for n=1,4 do output[n].slew = v end end)
 --public.add('ii_dest', 'none', {'none','jf','wsyn'}
-    , function(e) if e=='jf' then ii.jf.mode(1) end end) -- enable synthesis mode
+--function(e) if e=='jf' then ii.jf.mode(1) end end) -- enable synthesis mode
 --public.add('ii_velo', 2, {0.1, 5})
 
 -- global state

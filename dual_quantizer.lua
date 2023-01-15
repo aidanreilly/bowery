@@ -2,9 +2,13 @@
 -- quantized notes on outs 1 and 3, with a trigger on outs 2 and 4 for every new note
 
 function init()
+	-- quantize based on a phrygian scale
+	input[1].mode( 'scale', {0,1,3,5,7,8,10,12} )
+	input[2].mode( 'scale', {0,1,3,5,7,8,10,12} )
+
 	-- quantize based on a major pentatonic scale
-	input[1].mode( 'scale', {0,2,4,7,9} )
-	input[2].mode( 'scale', {0,2,4,7,9} )
+	--input[1].mode( 'scale', {0,2,4,7,9} )
+	--input[2].mode( 'scale', {0,2,4,7,9} )
 	print('dual quantizer loaded')
 end
 
