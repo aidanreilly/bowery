@@ -1,0 +1,347 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/oootini/bowery"
+	],
+	"file_history":
+	[
+		"/C/Users/oootini/bowery/crowsong.lua",
+		"/?norns.local/dust/code/blank/param.lua",
+		"/?norns.local/dust/code/mx.synths/lib/Engine_MxSynths.sc",
+		"/?norns.local/dust/code/sines/README.md",
+		"/?norns.local/dust/code/mx.synths/mx.synths.lua",
+		"/?norns.local/dust/code/sines/sines.lua",
+		"/C/Users/oootini/bowery/seq_m8.lua",
+		"/C/Users/oootini/Desktop/mx.synths/mx.synths.lua",
+		"/?norns.local/dust/code/mx.synths/lib/mx.synths.lua",
+		"/?norns.local/dust/code/sines_synth/README.md",
+		"/?norns.local/dust/code/thebangs/lib/Engine_Thebangs.sc",
+		"/?norns.local/dust/code/sines_synth/sines_synth.lua",
+		"/?norns.local/dust/code/sines_synth/.project",
+		"/C/Users/oootini/bowery/basic.lua",
+		"/C/Users/oootini/bowery/modes.lua",
+		"/C/Users/oootini/bowery/snippets/sequins.lua",
+		"/C/Users/oootini/bowery/gingerbread.lua",
+		"/C/Users/oootini/bowery/sequins.lua",
+		"/C/Users/oootini/bowery/boids.lua",
+		"/C/Users/oootini/bowery/lorenz.lua",
+		"/C/Users/oootini/bowery/euclidean.lua",
+		"/C/Users/oootini/bowery/chords.lua",
+		"/C/Users/oootini/bowery/crow_new_bits.lua",
+		"/C/Users/oootini/bowery/shiftregister.lua",
+		"/C/Users/oootini/Desktop/16sines/lib/16sines_engine.sc",
+		"//norns.local/dust/code/we/lib/Engine_PolySub.sc",
+		"//norns.local/dust/code/we/test/template.lua",
+		"//norns.local/dust/code/16sines/lib/16sines_engine.sc",
+		"//norns.local/dust/code/we/lib/Engine_TestSine.sc",
+		"//norns.local/dust/code/we/test/16sliders.lua",
+		"//norns.local/dust/code/grendy/lib/engine_grendy.sc",
+		"//norns.local/dust/code/ash/playfair_crow.lua",
+		"//norns.local/dust/code/we/test/16sines.lua",
+		"//norns.local/dust/code/grendy/grendy.lua",
+		"//norns.local/dust/code/16sines/README.md",
+		"//norns.local/dust/code/16sines/16sines.lua",
+		"//norns.local/dust/code/we/study/study3.lua",
+		"//norns.local/dust/code/we/demos/graph.lua",
+		"/C/Users/oootini/norns_edits/playfair_crow.lua",
+		"//norns.local/dust/code/awake/awake.lua",
+		"//norns.local/dust/code/awake_oootini/lib/ledmap.lua",
+		"//norns.local/dust/code/awake/awake_oootini.lua",
+		"/C/Users/oootini/Desktop/red-hat-v2.md",
+		"/C/Users/oootini/Desktop/my-interview-questions.md",
+		"/C/Users/oootini/Desktop/interview-tactics.md",
+		"/C/Users/oootini/Desktop/interview-scenarios.md",
+		"/C/Users/oootini/Desktop/leap-interview-prep.md",
+		"/C/Users/oootini/Desktop/review.md",
+		"/C/Users/oootini/euclidRhythmTester/readme.txt",
+		"/C/Users/oootini/bowery/trigger_gates.lua",
+		"/C/Users/oootini/bowery/samplehold.lua",
+		"/C/Users/oootini/bowery/dual_quantizer.lua",
+		"/C/Users/oootini/bowery - Copy/mult.lua",
+		"/C/Users/oootini/Desktop/cover-letter.md",
+		"/C/Users/oootini/less_concepts/l_c64.lua",
+		"/C/Users/oootini/less_concepts/README.md",
+		"/C/Users/oootini/docs/norns/fileshare.md",
+		"/C/Users/oootini/Desktop/29_St.Christophers_requirements.md",
+		"/C/Users/oootini/Downloads/Elektron_Transfer_1.2.2.9_win/release_notes.txt",
+		"//norns.local/dust/code/less_concepts/l_c64.lua",
+		"/C/Users/oootini/bowery/clockdiv.lua",
+		"/C/Users/oootini/bowery/guilty.lua",
+		"/C/Users/oootini/bowery/euclid_bounce.lua",
+		"/C/Users/oootini/bowery/d_lc.lua",
+		"/C/Users/oootini/bowery/mult.lua",
+		"/C/Users/oootini/bowery/First.lua",
+		"/C/Users/oootini/bowery/quantizer.lua",
+		"/C/Users/oootini/Desktop/df2_project/backfeeder.csv",
+		"/C/Users/oootini/patchwork/backfeeder.csv",
+		"/C/Users/oootini/patchwork/patchwork_monobright.lua",
+		"/C/Users/oootini/patchwork/README.md",
+		"/C/Users/oootini/patchwork/patchwork_64.lua",
+		"/C/Users/oootini/patchwork/patchwork.lua",
+		"/C/Users/oootini/Desktop/module_tester.md",
+		"/C/Users/oootini/Desktop/df2_project/feedbacker_parts.csv",
+		"/C/Users/oootini/Downloads/avril-master/avril-master/README",
+		"/C/Users/oootini/Downloads/DRIVER-MK2-AS-6-7-W10/DRIVER-MK2-AS-6-7-W10/README.txt",
+		"/C/Users/oootini/bowery/musicutil.lua",
+		"/C/Users/oootini/Downloads/CHORDORG (1).TXT",
+		"/C/Users/oootini/Downloads/CHORDORG (2).TXT",
+		"/C/Users/oootini/bowery/seqswitch.lua",
+		"/C/Users/oootini/Downloads/chords.lua",
+		"/C/Users/oootini/Downloads/CHORDORG.TXT",
+		"/D/streambox.txt",
+		"/D/CHORDORG.TXT",
+		"/D/darkice.cfg",
+		"/D/config.txt",
+		"/D/cmdline.txt",
+		"/C/Users/oootini/Desktop/locusonus.md",
+		"/C/Users/oootini/Desktop/out.txt",
+		"/C/ipaddresses.txt",
+		"/C/Users/oootini/Downloads/ESPlorer/ESPlorer/version.txt",
+		"/C/Users/oootini/AppData/Roaming/obs-studio/logs/2020-05-03 16-35-07.txt",
+		"/C/Users/oootini/AppData/Roaming/obs-studio/global.ini",
+		"/D/settings.txt",
+		"/C/Users/oootini/Desktop/streambox_oootini",
+		"/C/Users/oootini/Desktop/audioInjector-setup.sh",
+		"/C/Users/oootini/Desktop/audioInjector-test.sh",
+		"/C/Users/oootini/Desktop/asound.state.MIC.thru.test",
+		"/C/Users/oootini/pd_patches/README.md",
+		"/C/Users/oootini/Downloads/simple_locustream_Pd/simple_locustream_Pd/streambox_config.txt",
+		"/C/Users/oootini/brinkmann_granular_patches/first/README.txt",
+		"/C/Users/oootini/AppData/Local/Temp/7zO8ECA1CED/streambox",
+		"/C/Users/oootini/AppData/Local/Temp/7zO8EC5C32E/streambox",
+		"/C/Users/oootini/AppData/Local/Temp/7zO0E0BEEAC/streambox",
+		"/C/Users/oootini/AppData/Local/Temp/7zO80E2A8A6/streambox",
+		"/C/Users/oootini/Desktop/streambox",
+		"/C/Users/oootini/AppData/Local/Temp/7zO4EA6C470/streambox"
+	],
+	"find":
+	{
+		"height": 29.0
+	},
+	"find_in_files":
+	{
+		"height": 107.0,
+		"where_history":
+		[
+			"C:\\Users\\oootini\\Desktop\\mx.synths, *.*",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sines",
+			"sines_synth",
+			"sines",
+			"mod1",
+			"sines_synth",
+			"mod1",
+			"LinLin.kr(mod1",
+			"sines",
+			"sine",
+			"sines",
+			"squares()",
+			"squares",
+			"squares()",
+			"polyperc",
+			"note",
+			"count",
+			"c2",
+			"c1",
+			"for i =",
+			"}, {",
+			"       ",
+			"modes",
+			"count",
+			"pulse()",
+			"change = function()",
+			"coro",
+			".change = clock.",
+			".change = clock.run",
+			"stop",
+			"clock.run",
+			"shift_reg",
+			"rising",
+			"else",
+			"while",
+			"else",
+			"metro",
+			"if",
+			"pulse()",
+			"metro",
+			"==",
+			"else",
+			"pulse()",
+			"if ",
+			"public{",
+			"xrange",
+			"loading",
+			"randomize_osc",
+			"midiFirstOsc",
+			"Grendy",
+			"16nsliders",
+			"crow"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 126.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "bowery.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\oootini\\bowery\\bowery.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 220.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

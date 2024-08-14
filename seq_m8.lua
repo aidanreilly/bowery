@@ -12,9 +12,9 @@ notes = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 -- transpose amount
 t1 = 0
 t2 = 0
---individual voice clock div amounts
+-- individual voice clock div amounts
 d1 = 1
-d2 = 3 
+d2 = 3
 -- sequins step amount
 s1 = 1
 s2 = 3
